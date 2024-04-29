@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* font-family: "Rubik", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap');
+/* font-family: "Teko", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* font-family: "Dancing Script", cursive; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0px 200px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/08/29/09/26/beach-5526592_1280.jpg');
+
+    justify-content: space-between;
+    /* background-color: black; */
+    /* background-image: url('https://cdn.pixabay.com/photo/2019/12/03/21/29/mountains-4671122_1280.jpg'); */
+    /* background-image: url('https://cdn.pixabay.com/photo/2019/10/14/08/12/ocean-4548151_1280.jpg'); */
+    /* background-image: url('https://cdn.pixabay.com/photo/2015/03/10/07/20/aircraft-666832_1280.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.login video {
+    height: 100%;
+    width: 100%;
+}
+
+.login .login-div {
+    box-shadow: 0 0 10px #F690D5;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease 1s;
+}
+
+.login .login-div:hover {
+    transform: scale(1.05);
+}
+
+.login .login-div .header {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+
+.login .login-div input {
+    width: 300px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    box-shadow: 0 0 15px #F690D5;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+.login .login-div .check {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.login .login-div .check input {
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.login .login-div .check .remember {
+    position: relative;
+    right: 30px;
+}
+
+.login .login-div button {
+    background: linear-gradient(to bottom, #F690D5, #f5a6dc, #f7ceea, #fff6fc);
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login .login-div button:hover {
+    background: linear-gradient(to top, #F690D5, #f5a6dc, #f7ceea, #fff6fc);
+}
+
+.login .login-div a button {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.login .login-div .register {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.login .login-div .register p a {
+    color: white;
+    text-decoration: none;
+    transition: all ease 2s;
+}
+
+.login .login-div .register p a:hover {
+    color: #F690D5;
+}
+
+.login .login-div form label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-align: left !important;
+}
+
+.login .login-div form {
+    text-align: left;
+}
+
+.login .welcome {
+    position: relative;
+    top: 20px;
+}
+
+.login .welcome .header {
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    right: 50px;
+}
+
+.login .welcome .continue {
+    background-color: white;
+    box-shadow: 0 0 10px #F690D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    justify-self: center;
+    padding: 0px 50px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+    width: 320px;
+    transition: all ease 3s;
+}
+
+.login .welcome .continue:hover {
+    transform: scale(1.03);
+}
+
+.login .welcome .continue p {
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.login .welcome .main {
+    justify-content: left;
+    text-align: left;
+}
+
+.login .welcome .main .take {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.login .welcome .main .take span {
+    font-family: "Dancing Script", cursive;
+    font-size: 47px;
+    font-weight: 1000;
+    color: black;
+    margin-left: 10px;
+}
+
+.login .welcome .main .deals {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.login .welcome .main .deals span {
+    color: black;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin: 0px 5px;
+}
+
+.login .welcome .main .vacation {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 50%;
+    background: linear-gradient(to right, #F690D5, #f5a6dc, #f7ceea, #fff6fc);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* RESPONSIBLE  */
+
+@media screen and (max-width:1202px) {
+    .login {
+        display: grid;
+        justify-content: center;
+        padding: 60px 0px;
+    }
+
+    .login .welcome .main .vacation {
+        justify-content: center;
+    }
+
+    .login .login-div {
+        margin: 40px 0px;
+    }
+
+    .login {
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width:455px) {
+
+    .login {
+        height: 1200px;
+    }
+
+    .login .welcome .header {
+        right: 20px;
+    }
+
+    .login .login-div input {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:444px) {
+    .login .login-div {
+        width: 90%;
+    }
+}
